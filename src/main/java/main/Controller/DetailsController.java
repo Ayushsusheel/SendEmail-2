@@ -66,10 +66,13 @@ public ResponseEntity<BaseResponseBody> sendmail(@RequestBody DetailsReqDTO deta
 		DetailsDTO detailsdto=new DetailsDTO();
 		detailsdto.setReqdto(detailsreqdto);
 		
-		service.sendEmail(detailsreqdto.getEmail(), "Successfully registered", "Hello,\n Thankyou for registering in SaaS-Nest Technologies \n we will be contacting you soon\n Regards,\n Team-SaaS-Nest.");
 		
 		System.out.println("name---->"+ "  " +detailsreqdto.getName());
 		System.out.println("email--->"+"   " +detailsreqdto.getEmail());
+		
+		service.sendEmail(detailsreqdto.getEmail(), "Successfully registered", "Hello,\n Thankyou for registering in SaaS-Nest Technologies \n we will be contacting you soon\n Regards,\n Team-SaaS-Nest.");
+		
+		
 		
 		
 		return success(detailsdto, "sent", HttpStatus.OK);
