@@ -1,13 +1,27 @@
 package main;
 
+
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-public class ConsumeBodyApplication {
 
-	public static void main(String[] args) {
+
+
+@SpringBootApplication
+public class ConsumeBodyApplication 
+{
+
+	
+	
+	
+	public static void main(String[] args)
+	{
 		SpringApplication.run(ConsumeBodyApplication.class, args);
 	}
+	
+//	
+	
+	
+	
 
 }
